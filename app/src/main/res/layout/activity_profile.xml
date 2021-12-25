@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_gravity="center"
+                android:layout_width="170dp"
+                android:layout_height="170dp">
+
+                <ImageView
+                    android:id="@+id/profile_image"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_account_circle_black_24dp"/>
+
+                <!--<ImageButton-->
+                    <!--android:id="@+id/profile_image_edit"-->
+                    <!--android:layout_width="40dp"-->
+                    <!--android:layout_height="40dp"-->
+                    <!--android:layout_alignParentEnd="true"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:layout_alignParentBottom="true"-->
+                    <!--android:layout_marginBottom="18dp"-->
+                    <!--android:layout_marginRight="15dp"-->
+                    <!--android:background="@drawable/customborder3"-->
+                    <!--android:elevation="6dp"-->
+                    <!--android:src="@drawable/ic_edit_black_24dp" />-->
+
+            </RelativeLayout>
+
+
+
+
+            <TextView
+                android:textColor="@color/footercolor"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="PERSONAL INFORMATION"
+
+                android:layout_marginBottom="3dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/customborder"
+                android:layout_marginBottom="10dp"/>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp">
+                <EditText
+                    android:textIsSelectable="true"
+                    android:id="@+id/profile_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Profile Name"
+                    android:editable="false"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+
+
+
+
+            <TextView
+                android:textColor="@color/footercolor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CONTACT INFORMATION"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="3dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/customborder"
+                android:layout_marginBottom="5dp"/>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_margin="5dp"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:textIsSelectable="true"
+                    android:id="@+id/contact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:editable="false"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+
+                android:textColor="@color/footercolor"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="ACCOUNT INFORMATION"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/customborder"
+                android:layout_marginBottom="10dp"/>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_margin="5dp"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/profile_account_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Account type"
+                    android:textIsSelectable="true"
+                    android:editable="false"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_margin="5dp"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/profile_account_login"
+                    android:layout_width="match_parent"
+                    android:textIsSelectable="true"
+                    android:layout_height="wrap_content"
+                    android:hint="Last Login"
+                    android:editable="false"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_margin="5dp"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/profile_account_created"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textIsSelectable="true"
+                    android:hint="Account created"
+                    android:editable="false"/>
+            </android.support.design.widget.TextInputLayout>
+
+
+                <Button
+                    android:layout_margin="10dp"
+                    android:id="@+id/delete_account"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:text="Delete My Account"
+                    android:drawableLeft="@drawable/ic_delete_forever_black_24dp"
+                    android:drawableStart="@drawable/ic_delete_forever_black_24dp"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:background="@drawable/customborder2"
+                    android:layout_marginBottom="50dp"
+                    android:paddingLeft="10dp"
+                    android:paddingStart="10dp"
+                    android:foreground="?attr/selectableItemBackgroundBorderless"/>
+
+
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

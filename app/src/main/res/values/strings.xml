@@ -1,0 +1,25 @@
+<resources>
+    <string name="facebook_app_id">2185213541498281</string>
+    <string name="fb_login_protocol_scheme">fb2185213541498281</string>
+    <string name="app_name">Interpolation</string>
+    <string name="calculate">        Calculate        </string>
+    <string name="find_at">Find the value of f(x) at x = </string>
+    <string name="invalid_entries">Please enter all the entries!</string>
+    <string name="delete_history">Do you want to delete history? It will be deleted from database also!</string>
+    <string name="check">  Find maximum and minimum values also?</string>
+
+    <string-array name="methods_list">
+        <item>Newton Forward Formula</item>
+        <item>Newton Backward Formula</item>
+        <item>Gauss Forward Formula</item>
+        <item>Gauss Backward Formula</item>
+        <item>Stirling Formula</item>
+        <item>Lagrange Formula</item>
+        <item>Aitkhen Formula</item>
+    </string-array>
+    <string name="cautions">
+        &#8226;<br />&#160;&#160;&#160;Required password minimum length is 6 characters.\n
+        &#8226;<br />&#160;&#160;&#160;It is recommended to set password in integers only.\n
+        &#8226;<br />&#160;&#160;&#160;Don\'t use your original Email account password.
+    </string>
+</resources>

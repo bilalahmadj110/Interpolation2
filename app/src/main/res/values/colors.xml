@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#FF006AB5</color>
+    <color name="background_entry">#bababa</color>
+    <color name="background_entry1">#9e9e9e</color>
+    <color name="background_entry_">#eaeaea</color>
+    <color name="override_background_entry">#696969</color>
+    <color name="footercolor">#FF006AB5</color>
+    <color name="footercolor1">#00497c</color>
+    <color name="white">#ffffff</color>
+
+</resources>
